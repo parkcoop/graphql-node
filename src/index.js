@@ -9,10 +9,6 @@ const Subscription = require('./resolvers/Subscription')
 const Vote = require('./resolvers/Vote')
 
 
-const findIndex = (arr, field, reference) => {
-    return arr.findIndex((element) => { element[field] === reference[field] }
-)}
-
 const resolvers = {
     Query,
     Mutation,

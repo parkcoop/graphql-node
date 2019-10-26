@@ -1,3 +1,6 @@
+scalar DateTime
+
+
 type Query {
     info: String!
     feed(
@@ -15,12 +18,11 @@ type Feed {
 
 type Link {
     id: ID!
+    createdAt: DateTime!
     description: String!
     url: String!
     postedBy: User
     votes: [Vote!]!
-
-
 }
 
 type Subscription {
